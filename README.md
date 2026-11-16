@@ -4,7 +4,7 @@ A cozy physics tower-stacking game with furniture and pets.
 
 ## Android APK / 안드로이드 다운로드
 
-[Download Moving Tower 0.9.3 / APK 받기](https://github.com/ryu0819/moving-tower-downloads/releases/download/v0.9.3/MovingTower-0.9.3.apk)
+[Download Moving Tower 0.9.5 / APK 받기](https://github.com/ryu0819/moving-tower-downloads/releases/download/v0.9.5/MovingTower-0.9.5.apk)
 
 Android 7.1 or newer. Download the APK, then open it on your Android device to install.
 
