@@ -43,24 +43,26 @@ article + article {
   border-top: 1px solid #dbc9b1;
 }
 
-.terms-page main > article {
+.localized-policy main > article,
+.localized-policy article [id] {
   scroll-margin-top: 8rem;
 }
 
-.terms-page nav {
+.localized-policy nav {
   gap: 8px 14px;
 }
 
 @supports selector(main:has(> article:target)) {
-  .terms-page main > article {
+  .localized-policy main > article {
     display: none;
     margin: 0;
     padding: 0;
     border: 0;
   }
 
-  .terms-page main:not(:has(> article:target)) > #en,
-  .terms-page main > article:target {
+  .localized-policy main:not(:has(> article:target, > article :target)) > #en,
+  .localized-policy main > article:target,
+  .localized-policy main > article:has(:target) {
     display: block;
   }
 }
