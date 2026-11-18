@@ -42,3 +42,25 @@ article + article {
   padding-top: 22px;
   border-top: 1px solid #dbc9b1;
 }
+
+.terms-page main > article {
+  scroll-margin-top: 8rem;
+}
+
+.terms-page nav {
+  gap: 8px 14px;
+}
+
+@supports selector(main:has(> article:target)) {
+  .terms-page main > article {
+    display: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .terms-page main:not(:has(> article:target)) > #en,
+  .terms-page main > article:target {
+    display: block;
+  }
+}
